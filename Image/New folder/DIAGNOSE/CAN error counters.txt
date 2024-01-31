@@ -1,0 +1,70 @@
+++                  CAN ERROR COUNTERS
+++            RECEIVE                    TRANSMIT
+++=>RESET ALL
+reset_all_can
+++=>DrvM
+++CAN CENTRAL
+canDrvM_ctrl1_REC R
+canDrvM_ctrl1_RECMax R
+canDrvM_ctrl1_TEC R
+canDrvM_ctrl1_TECMax R
+++CAN LOCAL
+canDrvM_ctrl2_REC R
+canDrvM_ctrl2_RECMax R
+canDrvM_ctrl2_TEC R
+canDrvM_ctrl2_TECMax R
+++=>CBI
+++CAN CENTRAL
+canCBI_ctrl1_REC R
+canCBI_ctrl1_RECMax R
+canCBI_ctrl1_TEC R
+canCBI_ctrl1_TECMax R
+++CAN LOCAL
+canCBI_ctrl2_REC R
+canCBI_ctrl2_RECMax R
+canCBI_ctrl2_TEC R
+canCBI_ctrl2_TECMax R
+++=>CBISlave
+++CAN CENTRAL
+canCBISlave_ctrl1_REC R
+canCBISlave_ctrl1_RECMax R
+canCBISlave_ctrl1_TEC R
+canCBISlave_ctrl1_TECMax R
+++CAN LOCAL
+canCBISlave_ctrl2_REC R
+canCBISlave_ctrl2_RECMax R
+canCBISlave_ctrl2_TEC R
+canCBISlave_ctrl2_TECMax R
+++=>IOR
+++CAN CENTRAL
+canIOR_ctrl1_REC R
+canIOR_ctrl1_RECMax R
+canIOR_ctrl1_TEC R
+canIOR_ctrl1_TECMax R
+++CAN LOCAL
+canIOR_ctrl2_REC R
+canIOR_ctrl2_RECMax R
+canIOR_ctrl2_TEC R
+canIOR_ctrl2_TECMax R
+++=>SFC
+++CAN CENTRAL
+canSFC_ctrl1_REC R
+canSFC_ctrl1_RECMax R
+canSFC_ctrl1_TEC R
+canSFC_ctrl1_TECMax R
+++CAN LOCAL
+canSFC_ctrl2_REC R
+canSFC_ctrl2_RECMax R
+canSFC_ctrl2_TEC R
+canSFC_ctrl2_TECMax R
+++=>IoDummy
+++CAN CENTRAL
+canIoDummy_ctrl1_REC R
+canIoDummy_ctrl1_RECMax R
+canIoDummy_ctrl1_TEC R
+canIoDummy_ctrl1_TECMax R
+++CAN LOCAL
+canIoDummy_ctrl2_REC R
+canIoDummy_ctrl2_RECMax R
+canIoDummy_ctrl2_TEC R
+canIoDummy_ctrl2_TECMax R

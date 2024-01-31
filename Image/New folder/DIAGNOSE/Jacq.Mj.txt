@@ -1,0 +1,18 @@
+++      MJ JACQUARD
+-- JQ VANES :
+jq_vanes R
+-- MC / JQ / Diff :
+pick_counter R
+jq_PickReady R
+jq_PckCntrOffset R
+-- PAT~JQ (soll/real):
+jq_SncPatOffset R
+jq_PatOffset R
+-- JQ SYNC (JQ vs MC) :
+jq_mj_sync R
+-- JQ STATUS :
+jq_status R
+
+<MANUAL>
+JQ VANES : current vane position on machine
+JQ SYNC  : difference between Jacquard & Machine in picks

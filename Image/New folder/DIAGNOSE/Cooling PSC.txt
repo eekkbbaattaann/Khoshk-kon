@@ -1,0 +1,17 @@
+++          COOLING PSC
+++
+--cleaning period (min)
+psc_cleaning_period
+--switch-on duration (sec)
+psc_cleaning_on_time
+--start cleaning
+psc_cleaning_manual
+++
+++          TEMPERATURES
+++
+--PCB-temp (°C)
+psc_temp_pcb R
+--powerstage temp (°C)
+psc_temp_pwr R
+--motor coils temp (°C)
+psc_temp_motor R

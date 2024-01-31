@@ -1,0 +1,23 @@
+++ JACQUARD VANES 
+--PTR ENABLE :
+jq_ptr_present
+++
+<PARAM>
+dgn_mode=JACQ_VANES
+</PARAM>
+dgn_text4 R 
+++current vane position:
+dgn_text1 R
+++OV=
+dgn_text2 R
+++delay vane_valid:
+dgn_text3 R
+++max.delay enable
+jq_enable_delay R
+++
+++VANES ENABLE FEEDBACK
+--Max enable delay (ms) : 
+jq_enable_delay
+++
+--VANES CREATED ON MACHINE / REASON WHY NOT SEND TO JACQUARD :
+jq_vanes R

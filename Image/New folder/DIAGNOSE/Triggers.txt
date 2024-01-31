@@ -1,0 +1,5 @@
+++      TRIGGERS
+--device ID :
+trig_dev_id
+--status :
+trig_dev_sts

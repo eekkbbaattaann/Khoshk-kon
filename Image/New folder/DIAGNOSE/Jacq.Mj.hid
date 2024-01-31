@@ -1,0 +1,29 @@
+++         MJ JACQUARD
+-- MJ PRESENT : 
+jq_mj_present
+-- JQ VANES :
+jq_vanes
+--JQ SYNC (JQ vs MC) :
+jq_mj_sync R
+++
+++                                  ON/OFF    START      STOP       SPEED
+-- JACQUARD TEST
+axm_jq_test
+axm_jq_test_start
+axm_jq_test_stop
+axm_jq_test_speed
+-- JACQUARD EVENTS
+jq_event
+jq_event_detail
+
+<MANUAL>
+MJ PRESENT : interface to MJ jq ON/OFF
+JQ VANES : current vane position on machine
+JQ SYNC  : difference between Jacquard & Machine in picks
+
+JACQUARD TEST : enable/disable 
+  enabled : jacquard can run without machine
+  start/stop running
+  desired machine speed simulation
+JACQUARD EVENTS :
+  here you can enter a machine message number and detail (event logging)

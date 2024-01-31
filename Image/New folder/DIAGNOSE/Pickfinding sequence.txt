@@ -1,0 +1,8 @@
+++ PICKFINDING SEQUENCE
+++
+--sequence
+mv_sz_sequence
+++
+++
+--SZA_TIPV_SZA
+mv_sz_sequence_bool

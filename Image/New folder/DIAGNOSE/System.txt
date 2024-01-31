@@ -1,0 +1,14 @@
+++ SYSTEM
+++
+++ Checksum SW machine-CPU
+++                                          H          L
+--initial
+sys_checksum_init_H R
+SPACE500
+sys_checksum_init_L R
+--actual
+sys_checksum_act_H R
+SPACE500
+sys_checksum_act_L R
+--CALCULATE
+sys_checksum_calculate

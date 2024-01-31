@@ -1,0 +1,16 @@
+++ CUSTOMER ID
+-- GTime :
+GTime R
+-- GName : 
+GName R
+-- GSoft :
+GSoft R
+++ 
+++ CUSTOM EP FILES
+-- custom EP add-on :
+cust_ep_files
+++
+++ ALLOWED PATTERN CHANGES
+--zone
+pat_changes_allowed_zone
+++

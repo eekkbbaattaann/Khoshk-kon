@@ -1,0 +1,98 @@
+++ SDO
+++
+++=>DrvM
+--Node ID
+sdoDrvM_nodeID
+--Index(hex)
+sdoDrvM_index
+--Subindex(hex)
+sdoDrvM_subindex
+--GET VALUE
+sdoDrvM_request
+--Value
+sdoDrvM_value R
+--Device Name
+sdoDrvM_devName R
+--Device Type
+sdoDrvM_devType R
+++=>CBI
+--Node ID
+sdoCBI_nodeID
+--Index(hex)
+sdoCBI_index
+--Subindex(hex)
+sdoCBI_subindex
+--GET VALUE
+sdoCBI_request
+--Value
+sdoCBI_value R
+--Device Name
+sdoCBI_devName R
+--Device Type
+sdoCBI_devType R
+++=>CBISlave
+--Node ID
+sdoCBISlave_nodeID
+--Index(hex)
+sdoCBISlave_index
+--Subindex(hex)
+sdoCBISlave_subindex
+--GET VALUE
+sdoCBISlave_request
+--Value
+sdoCBISlave_value R
+--Device Name
+sdoCBISlave_devName R
+--Device Type
+sdoCBISlave_devType R
+++=>IOR
+--Node ID
+sdoIOR_nodeID
+--Index(hex)
+sdoIOR_index
+--Subindex(hex)
+sdoIOR_subindex
+--GET VALUE
+sdoIOR_request
+--Value
+sdoIOR_value R
+--Device Name
+sdoIOR_devName R
+--Device Type
+sdoIOR_devType R
+++=>SFC
+--Node ID
+sdoSFC_nodeID
+--Index(hex)
+sdoSFC_index
+--Subindex(hex)
+sdoSFC_subindex
+--GET VALUE
+sdoSFC_request
+--Value
+sdoSFC_value R
+--Device Name
+sdoSFC_devName R
+--Device Type
+sdoSFC_devType R
+++=>IODUMMY
+--Node ID
+sdoIODummy_nodeID
+--Index(hex)
+sdoIODummy_index
+--Subindex(hex)
+sdoIODummy_subindex
+--GET VALUE
+sdoIODummy_request
+--Value
+sdoIODummy_value R
+--Device Name
+sdoIODummy_devName R
+--Device Type
+sdoIODummy_devType R
+++
+++Statussen
+--Status jacquard
+jq_status
+--Status safety device
+safety_status

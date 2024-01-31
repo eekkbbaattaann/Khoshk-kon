@@ -1,0 +1,10 @@
+++Max. temperature
+--all rapiers
+rap_max_temp
+--shaft rapier drive wheel
+temperature_GB_max
+--crank-case
+temp_crankcase_max
+++
+--direct drive
+DD_max_temp

@@ -1,0 +1,94 @@
+++         DIAGNOSTICS: FEEDERS
+++
+<PARAM>
+dgn_mode=FEEDERS
+</PARAM>
+++Feeder:                  next:
+dgn_page
+dgn_next
+dgn_text1 R N
+dgn_text2 R N
+dgn_text3 R N
+dgn_text4 R N
+dgn_text5 R N
+dgn_text6 R N
+dgn_text7 R N
+dgn_text8 R N
+dgn_text9 R N
+dgn_text10 R N
+dgn_text11 R N
+dgn_text12 R N
+dgn_text13 R N
+dgn_text14 R N
+dgn_text15 R N
+dgn_text16 R N
+dgn_text17 R N
+++
+++
+++ PATTERN PRE-ORIENTATION (PPO control)
+prew_ppo_control
+<MANUAL>
+
+Feeder 1: 
+Feeder number (= connector number on the controlbox). Press 'next' to select next feeder.
+ 
+TOP color 01: 
+the position and color for which this feeder is used
+ 
+NODE STATUS: 
+05 = operational / 127 = pre-operational / 128 = no communication with feeder
+ 
+STARTUP STATUS: 
+0 = started up / > 0 = status at startup error
+1: startup requested : no communication with node within 10 sec after power on
+2: asking device type failed or wrong device type (must be 414/01)
+3: asking device vendor failed or unsupported vendor (must be 160 = IRO)
+4: reading feederfunctions failed
+5: setting feederfunctions failed
+6: setting insertion type failed
+7: setting number of increments failed
+8: setting color assignment failed
+9: tensioner setup failed
+11:asking feederstate failed
+12: start node : node not operational within 5 seconds after start command
+14: pickinsertion mode not supported
+15: sending PPO control failed
+ 
+FEEDER STATUS (6009h):
+00: operational mode
+01: positioning mode
+02: filling up to maximum sensor
+04: non operational mode
+06: initializing mode
+07: error mode
+08: switch in OFF position
+09: bobbin break
+ 
+FEEDER ERROR (6007h)
+when a feeder error is active the red led on the feeder flashes.
+00: operational - no error
+01: no settings available in EEPROM
+02: switch in OFF position
+03: weaving machine parameters missing
+04: yarn is broken
+05: feeder is running empty
+06: temperature too high
+07: motor voltage not OK
+08: no communication with EEPROM
+09: rotation not possible/motor lock
+0A: filling up failed
+0B: color information missing. Activated by automatic brake test. Error is cleared when loom is started.
+0C: angle trigger signal missing
+0F: general error
+ 
+ERROR REGISTER:
+0 = no errors active 
+>0 = errors active. More details in "Feeder status" and "feeder error"
+ 
+SDO ABORT CODE: reason while data-transmission failed. 00000000 = no failures.
+ 
+PATTERN PRE-ORIENTATION: 
+ON: the feeder uses the pickinsertion data to optimize his speed
+OFF: the feeder works as a standalone feeder (connection and startup must be OK!)
+
+</MANUAL>

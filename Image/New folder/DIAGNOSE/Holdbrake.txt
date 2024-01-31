@@ -1,0 +1,11 @@
+++     HOLDBRAKE
+++ HOLDBRAKE 1
+--current
+brake_current_brake1
+--threshold
+brake_threshold_brake1
+++ HOLDBRAKE 2
+--current
+brake_current_brake2
+--threshold
+brake_threshold_brake2

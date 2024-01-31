@@ -1,0 +1,15 @@
+++WEFT SELECTION
+--selection position fast
+fsel_pos_sel
+--deselection position fast
+fsel_pos_desel
+--selection pos. slow
+fsel_slow_pos_sel
+--deselection pos. slow
+fsel_slow_pos_desel
+--sel. pos. min - max
+fil_sel_error
+--desel. pos. min - max
+fil_desel_error
+--reset measurement
+fil_zone_reset

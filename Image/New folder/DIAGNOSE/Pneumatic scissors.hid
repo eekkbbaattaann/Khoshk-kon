@@ -1,0 +1,9 @@
+++         DIAGNOSE FILLING SCISSORS
+++
+<PARAM>
+dgn_mode=FILL_SCISS
+</PARAM>
+dgn_text1 R N
+dgn_text2 R N
+dgn_text3 R N
+dgn_text4 R N

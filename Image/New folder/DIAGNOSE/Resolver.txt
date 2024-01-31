@@ -1,0 +1,17 @@
+++         DIAGNOSE: RESOLVER
+++
+<PARAM>
+dgn_mode=RESOLVER
+</PARAM>
+dgn_text1 R N
+dgn_text2 R N
+++
+++machine position:
+mv_pos R
+++
+++ trigger tables:
+<FILE>
+FAST TRIGGERS
+SLOW TRIGGERS
+</FILE>
+

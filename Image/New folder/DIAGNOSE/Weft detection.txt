@@ -1,0 +1,9 @@
+++WEFT DETECTION
+--detection weft top
+fil_det_up
+--detection weft mid
+fil_det_mid
+--detection weft bot
+fil_det_bot
+--no motion
+fil_det_no_motion

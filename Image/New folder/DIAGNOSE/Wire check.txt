@@ -1,0 +1,118 @@
+++ WIRE CHECK
+++
+++ LEARNING PHASE
+++SENSOR          POSITION
+wire_learn_f1_sensor R
+SPACE1000
+wire_learn_f1_pos R
+wire_learn_f2_sensor R N
+SPACE1000
+wire_learn_f2_pos R
+wire_learn_f3_sensor R N
+SPACE1000
+wire_learn_f3_pos R
+wire_learn_f4_sensor R N
+SPACE1000
+wire_learn_f4_pos R
+wire_learn_f5_sensor R N
+SPACE1000
+wire_learn_f5_pos R
+++
+++cycle :
+wire_learned_cycle R
+++
+++ INSPECTION PHASE
+++ Phase    Expected_             Zone                       Measured_
+++                sensor                                                  sensors
+++                                                                        WCR  WCL  WIN
+wire_inspec_f1_inout R W1000T
+SPACE500
+wire_inspec_f1_sensor R
+SPACE500
+wire_inspec_f1_zone R
+SPACE500
+wire_inspec_f1_check R
+wire_inspec_f2_inout R N W1000T
+SPACE500
+wire_inspec_f2_sensor R
+SPACE500
+wire_inspec_f2_zone R
+SPACE500
+wire_inspec_f2_check R
+wire_inspec_f3_inout R N W1000T
+SPACE500
+wire_inspec_f3_sensor R
+SPACE500
+wire_inspec_f3_zone R
+SPACE500
+wire_inspec_f3_check R
+wire_inspec_f4_inout R N W1000T
+SPACE500
+wire_inspec_f4_sensor R
+SPACE500
+wire_inspec_f4_zone R
+SPACE500
+wire_inspec_f4_check R
+wire_inspec_f5_inout R N W1000T
+SPACE500
+wire_inspec_f5_sensor R
+SPACE500
+wire_inspec_f5_zone R
+SPACE500
+wire_inspec_f5_check R
+
+<MANUAL>
+This screen concerns the inspection of the wire carriage and the wire
+insertion, based on  :
+- the wire carriage inspection : left and right sensors on the wire path
+- the inspection of the wire insertion : sensor that is damped when a wire is inserted
+ 
+ 
+LEARNING PHASE :
+This part of the screen displays information measured during the learning
+phase, i.e. during the wire inspection synchronization.
+ 
+During the learning phase, the positions at which each sensor is damped are
+measured. Here : 
+- WCL : is the left sensor on the wire carriage path
+- WCR : is the right sensor on the wire carriage path
+- WIN : is the sensor that is damped when the wire is inserted
+ 
+The sensors and the corresponding positions are represented from the top to
+the bottom, in the order as they were damped during synchronization.
+For instance :
+- WCR 284° : first sensor, damped at position 284°
+- WCR 136° : next sensor, damped at position 136°
+- WCL 242° : next sensor, damped at position 242°
+- WIN 348° : next sensor, damped at position 348°
+- WCL  88° : last sensor, damped at position 88°
+ 
+Depending on the wire motion phase in which the synchronization is started,
+the sequence with another sensor is started.
+
+ 
+ 
+INSPECTION PHASE :
+This part of the screen displays information, needed for the inspection of
+the wire carriage and the wire insertion.
+ 
+Depending on the wire insertion or retraction, it is indicated
+- for each of the sensors in which zone it should be damped, otherwise the
+  machine stops, generating an error message.
+     Example : ins. WCR 126°-146°
+     indicates that during the insertion of the wire, the right sensor on 
+     the wire path must be damped between 126° and 146°.
+- which sensor actually was damped in each of the zones
+     Example :                   WCR WCL WIN
+               extr. WCL 78°-98°  0   1   0
+     indicates that between 78° and 98°
+     - the right sensor on the wire path was not damped (0)
+     - the left sensor on the wire path was damped (1)
+     - the sensor for the inserted wire was not damped (0)
+     As this corresponds to the expected sensor (WCL), everything is OK and
+     the machine will not stop.
+ 
+The zones are determined based on the positions measured during the
+learning phase.
+
+</MANUAL>

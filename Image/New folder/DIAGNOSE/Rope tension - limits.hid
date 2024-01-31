@@ -1,0 +1,9 @@
+++         ROPE LOAD CELL TENSION MIN/MAX ALLOWED VALUES
+++
+--min (N)
+pile_rope_tens_min_allowed 0000.0 
+--max (N)
+pile_rope_tens_max_allowed 0000.0
+++
+--nb picks
+knife_start_det
